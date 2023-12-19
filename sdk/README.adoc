@@ -289,7 +289,7 @@ vm = vm_service.get()
 attachments = connection.follow_link(vm.disk_attachments)
 for attachment in attachments:
     disk = connection.follow_link(attachment.disk)
-    print("disk.alias: " % disk.alias)
+    print("disk.alias: %s" % disk.alias)
 ----
 
 === Locating services
